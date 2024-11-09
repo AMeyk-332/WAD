@@ -1,0 +1,11 @@
+mkdir sara
+( add code or file in that sara folder )
+(create a repo using that github website)
+git config --global user.name "Saramali1"
+git config --global user.email "malisara103@gmail.com"
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/Saramali1/wlab.git
+git push -u origin main

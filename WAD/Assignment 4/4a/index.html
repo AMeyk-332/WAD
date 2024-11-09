@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- Meta tags for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom CSS styles -->
+    <style>
+        /* Set custom fonts and colors */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f9;
+            color: #4a4a4a;
+        }
+
+        /* Customize headers */
+        h1, h2 {
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+
+        /* Customize buttons */
+        .ui-btn {
+            background-color: #0077b6;
+            color: #ffffff;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Customize links */
+        a {
+            color: #0077b6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Customize list items */
+        li a {
+            color: #4a4a4a;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        /* Customize footer */
+        [data-role="footer"] {
+            background-color: #4a4a4a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Customize page margins */
+        [data-role="content"] {
+            margin: 20px;
+        }
+
+        /* Style projects as cards */
+        .project-card {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add subtle hover effect to project cards */
+        .project-card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>My Portfolio</h1>
+        </div>
+        <div data-role="content">
+            <p>Welcome to my portfolio! Explore my projects and contact me for more information.</p>
+            <a href="#projects" class="ui-btn">View Projects</a>
+            <a href="#contact" class="ui-btn">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Projects Page -->
+    <div data-role="page" id="projects">
+        <div data-role="header">
+            <h1>Projects</h1>
+        </div>
+        <div data-role="content">
+            <div class="project-card">
+                <h2>Project 1</h2>
+                <p>Description of Project 1. Add links or images here.</p>
+            </div>
+            <div class="project-card">
+                <h2>Project 2</h2>
+                <p>Description of Project 2. Add links or images here.</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div data-role="page" id="contact">
+        <div data-role="header">
+            <h1>Contact Me</h1>
+        </div>
+        <div data-role="content">
+            <p>You can reach me via email at example@example.com.</p>
+            <p>Or follow me on social media:</p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="https://www.linkedin.com/in/sara-mali-84111b232/">LinkedIn</li>
+                <li><a href="#">GitHub</a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Shared Footer -->
+    <div data-role="footer">
+        <h4>© Sara Mali</h4>
+    </div>
+
+</body>
+</html>
